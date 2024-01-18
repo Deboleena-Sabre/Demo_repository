@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/custom.css')}}">
+    <title>Flask app with logging</title>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        var log1 = document.getElementById('log1');
+        var log2 = document.getElementById('log2');
+        var xhr1 = new XMLHttpRequest();
+        xhr1.open('GET', '{{ url_for("log_stream_1") }}', true);
+        xhr1.send();
+        var xhr2 = new XMLHttpRequest();
+        xhr2.open('GET', '{{ url_for("log_stream_2") }}', true);
+        xhr2.send();
+        // console.log(xhr.responseText)
+        setInterval(function() {
+          log1.textContent = xhr1.responseText;
+          log2.textContent = xhr2.responseText;
+          
+        }, 500);
+      });
+    </script>
+  </head>
+  <body id="main">
+    <div class="row">
+        <div style="background-color: white; width: 100%; height: 650px;">
+            <pre id="log1" style="background-color: white; width: 50%; height: 650px;float:left;">
+            </pre>
+            <pre id="log2" style="background-color: black; width:50%; height: 650px;float:left;color: white;">
+            </pre>
+        </div>
+      <!-- <h2 align="center">Logging will appear here:</h2>
+      <div class="logging_window">
+        <pre id="output"></pre>
+      </div> -->
+    </div>
+  </body>
+</html>

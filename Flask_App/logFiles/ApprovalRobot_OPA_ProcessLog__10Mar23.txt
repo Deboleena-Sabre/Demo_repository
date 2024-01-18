@@ -1,0 +1,218 @@
+08:42:03  Current Query : Update irobo_copy set ActiveStatus="Y", LastActiveDateTime='2023-03-10 08:42:02.899888' where UserID="9984" and AppName="ApprovalRobot"
+08:42:03  Database Updated
+08:42:03  Initiating OPA process
+08:42:04  Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1
+08:42:04  Processing Work Queue
+08:42:04  COUNTING RECORDS IN WORK QUEUE VK87 117
+08:42:05  QUEUE 117 HAS 2 PNR
+08:42:05  Accessing Queue for Next PNR
+08:42:05  q/VK87117
+08:42:05  Processing Next PNR from Queue
+08:42:05        011  SEE REMARKS
+ 1.1ZEST/ZESTO
+ 2  OTH AA 24APR M HK1  INFORMATION/WE APPRECIATE YOUR BUSINESS
+TKT/TIME LIMIT
+  1.TAW/OPA
+PHONES
+  1.AUS9999999999
+CUSTOMER NUMBER - TEST123   
+ADDRESS
+    APPLE INC
+    12345 RIATA VISTA CR
+AA FACTS
+  1.SSR OTHS 1S KK1.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE
+     RULES TO AVOID AD
+GENERAL FACTS
+  1.SSR OTHS 1S KK1.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE
+     RULES TO AVOID AD
+REMARKS
+  1..S*UD5 5064440
+  2.S*UD16 VAKKI.AT.APPLE.COM
+RECEIVED FROM - TEST
+VK87.57HG*APS 0759/02NOV22 XOLXVK H
+08:42:06  PNR retrieved from Queue -XOLXVK
+08:42:06  Parsing PNR Data via SWS
+08:42:07  PNR being processed from SWS - XOLXVK
+08:42:07  PROCESSING RECORD # -XOLXVK
+08:42:11  ATP found for Vikas Akki
+08:42:12  Current Query :SELECT unibox_approval_status,PNR_BCN FROM fmdbopalist_copy where PNR_BCN= 'XOLXVK'
+08:42:12  Current Data Fetched : [('Denied', 'XOLXVK')]
+08:42:12  OPA status found as Denied
+08:42:12  Adding Denied K¥ remarks
+08:42:12  Adding Denied 5H remarks
+08:42:13  Saving Remarks in the PNR
+08:42:13  6TEST
+08:42:13  ER
+08:42:14   1.1ZEST/ZESTO
+ 2  OTH AA 24APR M HK1  INFORMATION/WE APPRECIATE YOUR BUSINESS
+TKT/TIME LIMIT
+  1.TAW/OPA
+PHONES
+  1.AUS9999999999
+CUSTOMER NUMBER - TEST123   
+ADDRESS
+    APPLE INC
+    12345 RIATA VISTA CR
+AA FACTS
+  1.SSR OTHS 1S KK1.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE
+     RULES TO AVOID AD
+GENERAL FACTS
+  1.SSR OTHS 1S KK1.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE
+     RULES TO AVOID AD
+REMARKS
+  1..S*UD5 5064440
+  2.S*UD16 VAKKI.AT.APPLE.COM
+  3. ATP FOUND FOR VIKAS AKKI
+  4.KOPA APPROVAL DENIED
+  5.H-APPROB IDENTIFIED OPA DENIED BY AN APPROVER
+RECEIVED FROM - TEST
+VK87.57HG*APS 0759/02NOV22 XOLXVK H
+08:42:14  QP/VK87116/11
+08:42:15  Processing Next PNR from Queue
+08:42:15        011  SEE REMARKS
+ 1.1TEST/TESTO
+ 1 AA1333Y 23JUN 5 AUSDFW HX1  1258  1411  /DCAA*KNVLKD /E
+TKT/TIME LIMIT
+  1.TAW/22JUN
+PHONES
+  1.AUS9999999999
+CUSTOMER NUMBER - TEST12    
+ADDRESS
+    TEST
+AA FACTS
+  1.SSR ADTK 1S KK01 AA WILL CANCEL IF NO TKT BY 2359 10MAR CST
+  2.SSR OTHS 1S HX CANCELED DUE TO SYSTEM OR PASSENGER ACTION
+  3.SSR OTHS 1S HX DELETE HX SEGS FROM PNR TO KEEP RES IN SYNCH
+GENERAL FACTS
+  1.SSR OTHS 1S CANCELLED DUE TO FICTITIOUS NAME 09MAR
+REMARKS
+  1.S*UD5 5064440
+  2.S*UD16 VAKKI.AT.APPLE.COM
+RECEIVED FROM - TEST
+VK87.VK87*A02 0852/09MAR23 ELGNMT H
+08:42:16  PNR retrieved from Queue -ELGNMT
+08:42:16  Parsing PNR Data via SWS
+08:42:17  PNR being processed from SWS - ELGNMT
+08:42:17  PROCESSING RECORD # -ELGNMT
+08:42:20  ATP found for Vikas Akki
+08:42:21  Current Query :SELECT unibox_approval_status,PNR_BCN FROM fmdbopalist_copy where PNR_BCN= 'ELGNMT'
+08:42:21  Current Data Fetched : [('Approved', 'ELGNMT')]
+08:42:21  OPA status found as Approved
+08:42:21  
+08:42:21  Adding Approved K¥ remarks
+08:42:21  Adding Approved 5H remarks
+08:42:22  Adding Approved S*UD56 remarks
+08:42:22  Saving Remarks in the PNR
+08:42:23  6TEST
+08:42:23  ER
+08:42:23   1.1TEST/TESTO
+ 1 AA1333Y 23JUN 5 AUSDFW HX1  1258  1411  /DCAA*KNVLKD /E
+TKT/TIME LIMIT
+  1.TAW/22JUN
+PHONES
+  1.AUS9999999999
+CUSTOMER NUMBER - TEST12    
+ADDRESS
+    TEST
+AA FACTS
+  1.SSR ADTK 1S KK01 AA WILL CANCEL IF NO TKT BY 2359 10MAR CST
+  2.SSR OTHS 1S HX CANCELED DUE TO SYSTEM OR PASSENGER ACTION
+  3.SSR OTHS 1S HX DELETE HX SEGS FROM PNR TO KEEP RES IN SYNCH
+GENERAL FACTS
+  1.SSR OTHS 1S CANCELLED DUE TO FICTITIOUS NAME 09MAR
+REMARKS
+  1.S*UD5 5064440
+  2.S*UD16 VAKKI.AT.APPLE.COM
+  3. ATP FOUND FOR VIKAS AKKI
+  4.KOPA APPROVAL APPROVED
+  5.H-APPROB IDENTIFIED OPA FULLY APPROVED
+  6..S*UD56 APPROVED
+RECEIVED FROM - TEST
+VK87.VK87*A02 0852/09MAR23 ELGNMT H
+08:42:23  QP/VK87116/11
+08:42:25  Queue 117 is currently empty
+08:42:25  END OF PROCESS FOR QUEUE - 117
+08:43:25  Current Query : Update irobo_copy set ActiveStatus="Y", LastActiveDateTime='2023-03-10 08:43:25.625509' where UserID="9984" and AppName="ApprovalRobot"
+08:43:26  Database Updated
+08:43:26  Current Query : Update irobo_copy set ActiveStatus="Y", LastActiveDateTime='2023-03-10 08:43:26.133126' where UserID="9984" and AppName="ApprovalRobot"
+08:43:26  Database Updated
+08:43:26  Initiating OPA process
+08:43:27  Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESA!ICESMSLB\/RES.LB!1678418007339!6709!269!1
+08:43:27  Processing Work Queue
+08:43:27  COUNTING RECORDS IN WORK QUEUE 1I0G 117
+08:43:27  QUEUE 117 HAS 0 PNR
+08:43:27  END OF PROCESS FOR QUEUE - 117
+08:44:28  Current Query : Update irobo_copy set ActiveStatus="Y", LastActiveDateTime='2023-03-10 08:44:28.001051' where UserID="9984" and AppName="ApprovalRobot"
+08:44:28  Database Updated
+08:44:28  Current Query : Select UpdatesAvailableFlag from irobo_copy where UserID="9984" and AppName="ApprovalRobot"
+08:44:28  Current Data Fetched : N
+08:44:28  Robot Snooze for 10 seconds
+08:44:38  Restarting the robot
+08:44:38  Current Query : Update irobo_copy set ActiveStatus="Y", LastActiveDateTime='2023-03-10 08:44:38.768636' where UserID="9984" and AppName="ApprovalRobot"
+08:44:39  Database Updated
+08:44:39  Initiating OPA process
+08:44:40  Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESG!ICESMSLB\/RES.LB!1678418079960!6072!273!1
+08:44:40  Processing Work Queue
+08:44:40  COUNTING RECORDS IN WORK QUEUE VK87 117
+08:44:40  QUEUE 117 HAS 0 PNR
+08:44:40  END OF PROCESS FOR QUEUE - 117
+08:50:52  Current Query : Update irobo_copy set ActiveStatus="Y", LastActiveDateTime='2023-03-10 08:50:52.686317' where UserID="9984" and AppName="ApprovalRobot"
+08:50:53  Database Updated
+08:50:53  Initiating OPA process
+08:50:54  Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESF!ICESMSLB\/RES.LB!1678418453830!1543!305!1
+08:50:54  Processing Work Queue
+08:50:54  COUNTING RECORDS IN WORK QUEUE VK87 117
+08:50:55  QUEUE 117 HAS 0 PNR
+08:50:55  END OF PROCESS FOR QUEUE - 117
+08:51:55  Current Query : Update irobo_copy set ActiveStatus="Y", LastActiveDateTime='2023-03-10 08:51:55.136299' where UserID="9984" and AppName="ApprovalRobot"
+08:51:55  Database Updated
+08:51:55  Current Query : Update irobo_copy set ActiveStatus="Y", LastActiveDateTime='2023-03-10 08:51:55.629123' where UserID="9984" and AppName="ApprovalRobot"
+08:51:56  Database Updated
+08:51:56  Initiating OPA process
+08:51:56  Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678418516458!237!301!1
+08:51:56  Processing Work Queue
+08:51:56  COUNTING RECORDS IN WORK QUEUE 1I0G 117
+08:51:57  QUEUE 117 HAS 0 PNR
+08:51:57  END OF PROCESS FOR QUEUE - 117
+08:52:57  Current Query : Update irobo_copy set ActiveStatus="Y", LastActiveDateTime='2023-03-10 08:52:57.046345' where UserID="9984" and AppName="ApprovalRobot"
+08:52:57  Database Updated
+08:52:57  Current Query : Select UpdatesAvailableFlag from irobo_copy where UserID="9984" and AppName="ApprovalRobot"
+08:52:57  Current Data Fetched : Y
+08:52:57  Downloading Box file = /Users/ShubhamKhandelwal/Box Sync/Sabre BLR Dev team/NewBees/OPA_Test_Files/UpdateFilesTesting/Box/More files/.DS_Store to Application file = /Users/ShubhamKhandelwal/Documents/OPA_Robot_working/UpdateFileTesting/More files/.DS_Store
+08:52:57  Downloading Box file = /Users/ShubhamKhandelwal/Box Sync/Sabre BLR Dev team/NewBees/OPA_Test_Files/UpdateFilesTesting/Box/More files/test3.txt to Application file = /Users/ShubhamKhandelwal/Documents/OPA_Robot_working/UpdateFileTesting/More files/test3.txt
+08:52:57  Downloading Box file = /Users/ShubhamKhandelwal/Box Sync/Sabre BLR Dev team/NewBees/OPA_Test_Files/UpdateFilesTesting/Box/More files/test.txt to Application file = /Users/ShubhamKhandelwal/Documents/OPA_Robot_working/UpdateFileTesting/More files/test.txt
+08:52:57  Update success...restarting the robot
+08:52:57  Current Query : Update irobo_copy set UpdatesAvailableFlag="N" where UserID="9984" and AppName="ApprovalRobot"
+08:52:58  Database Updated
+08:52:58  Current Query : Update irobo_copy set ActiveStatus="Y", LastActiveDateTime='2023-03-10 08:52:58.282602' where UserID="9984" and AppName="ApprovalRobot"
+08:52:58  Database Updated
+08:52:58  Initiating OPA process
+08:52:59  Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESD!ICESMSLB\/RES.LB!1678418579199!2921!269!1
+08:52:59  Processing Work Queue
+08:52:59  COUNTING RECORDS IN WORK QUEUE VK87 117
+08:52:59  QUEUE 117 HAS 0 PNR
+08:52:59  END OF PROCESS FOR QUEUE - 117
+08:53:59  Current Query : Update irobo_copy set ActiveStatus="Y", LastActiveDateTime='2023-03-10 08:53:59.794661' where UserID="9984" and AppName="ApprovalRobot"
+08:54:00  Database Updated
+08:54:00  Current Query : Update irobo_copy set ActiveStatus="Y", LastActiveDateTime='2023-03-10 08:54:00.296760' where UserID="9984" and AppName="ApprovalRobot"
+08:54:00  Database Updated
+08:54:00  Initiating OPA process
+08:54:01  Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESD!ICESMSLB\/RES.LB!1678418641129!8368!277!1
+08:54:01  Processing Work Queue
+08:54:01  COUNTING RECORDS IN WORK QUEUE 1I0G 117
+08:54:01  QUEUE 117 HAS 0 PNR
+08:54:01  END OF PROCESS FOR QUEUE - 117
+08:55:01  Current Query : Update irobo_copy set ActiveStatus="Y", LastActiveDateTime='2023-03-10 08:55:01.744754' where UserID="9984" and AppName="ApprovalRobot"
+08:55:02  Database Updated
+08:55:02  Current Query : Select UpdatesAvailableFlag from irobo_copy where UserID="9984" and AppName="ApprovalRobot"
+08:55:02  Current Data Fetched : N
+08:55:02  Robot Snooze for 10 seconds
+08:55:12  Restarting the robot
+08:55:12  Current Query : Update irobo_copy set ActiveStatus="Y", LastActiveDateTime='2023-03-10 08:55:12.487610' where UserID="9984" and AppName="ApprovalRobot"
+08:55:12  Database Updated
+08:55:12  Initiating OPA process
+08:55:13  Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESG!ICESMSLB\/RES.LB!1678418713309!661!293!1
+08:55:13  Processing Work Queue
+08:55:13  COUNTING RECORDS IN WORK QUEUE VK87 117
+08:55:13  QUEUE 117 HAS 0 PNR
+08:55:13  END OF PROCESS FOR QUEUE - 117

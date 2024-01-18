@@ -1,0 +1,1499 @@
+2023/03/10 08:42:04 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <SOAP-ENV:Envelope
+        xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:eb="http://www.ebxml.org/namespaces/messageHeader"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:xsd="http://www.w3.org/1999/XMLSchema">
+        <SOAP-ENV:Header>
+            <eb:MessageHeader SOAP-ENV:mustUnderstand="1" eb:version="2.0">
+                <eb:ConversationId>2021-02-04-11184</eb:ConversationId>
+                <eb:From>
+                    <eb:PartyId type="urn:x12.org:IO5:01">Turbo</eb:PartyId>
+                </eb:From>
+                <eb:To>
+                    <eb:PartyId type="urn:x12.org:IO5:01">webservices.sabre.com</eb:PartyId>
+                </eb:To>
+                <eb:CPAId>57HG</eb:CPAId>
+                <eb:Service eb:type="sabreXML">Session</eb:Service>
+                <eb:Action>SessionCreateRQ</eb:Action>
+                <eb:MessageData>
+                    <eb:MessageId>mid:1000</eb:MessageId>
+                    <eb:Timestamp>2022-12-04T18:27:23Z</eb:Timestamp>
+                    <eb:TimeToLive>2022-12-04T18:57:23Z</eb:TimeToLive>
+                </eb:MessageData>
+            </eb:MessageHeader>
+            <wsse:Security
+                xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"
+                xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/12/utility">
+                <wsse:UsernameToken>
+                    <wsse:Username>2222</wsse:Username>
+                    <wsse:Password>vgbhnj12</wsse:Password>
+                    <Organization>57HG</Organization>
+                    <Domain>AA</Domain>
+                </wsse:UsernameToken>
+            </wsse:Security>
+        </SOAP-ENV:Header>
+        <SOAP-ENV:Body>
+            <SessionCreateRQ returnContextID="true">
+                <POS>
+                    <Source PseudoCityCode="57HG"/>
+                </POS>
+            </SessionCreateRQ>
+        </SOAP-ENV:Body>
+    </SOAP-ENV:Envelope>
+2023/03/10 08:42:04 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SessionCreateRS</eb:Action><eb:MessageData><eb:MessageId>905289115240920890</eb:MessageId><eb:Timestamp>2023-03-10T03:12:04</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SessionCreateRS xmlns="http://www.opentravel.org/OTA/2002/11" version="1" status="Approved">	<ConversationId>2021-02-04-11184</ConversationId></SessionCreateRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:05 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>qc/VK87117</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:05 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>905543115251870660</eb:MessageId><eb:Timestamp>2023-03-10T03:12:05</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>             ON QUEUE AS OF 2112 ON 09MAR FOR VK87
+VK87 QUEUE 117  HAS       2 PNRS
+</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:05 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>q/VK87117</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:05 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>905512115256360340</eb:MessageId><eb:Timestamp>2023-03-10T03:12:05</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>      011  SEE REMARKS
+ 1.1ZEST/ZESTO
+ 2  OTH AA 24APR M HK1  INFORMATION/WE APPRECIATE YOUR BUSINESS
+TKT/TIME LIMIT
+  1.TAW/OPA
+PHONES
+  1.AUS9999999999
+CUSTOMER NUMBER - TEST123   
+ADDRESS
+    APPLE INC
+    12345 RIATA VISTA CR
+AA FACTS
+  1.SSR OTHS 1S KK1.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE
+     RULES TO AVOID AD
+GENERAL FACTS
+  1.SSR OTHS 1S KK1.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE
+     RULES TO AVOID AD
+REMARKS
+  1..S*UD5 5064440
+  2.S*UD16 VAKKI.AT.APPLE.COM
+RECEIVED FROM - TEST
+VK87.57HG*APS 0759/02NOV22 XOLXVK H</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:06 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>*P6</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:06 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>905558115261800340</eb:MessageId><eb:Timestamp>2023-03-10T03:12:06</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>RECEIVED FROM - TEST
+VK87.57HG*APS 0759/02NOV22 XOLXVK H</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:07 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:v1="http://webservices.sabre.com/pnrbuilder/v1_19" xmlns:v11="http://services.sabre.com/res/or/v1_14">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader>
+            <mes:From>
+                <mes:PartyId mes:type="urn:x12.org:IO5:01">SWS</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId mes:type="urn:x12.org:IO5:01">SWS</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>2B67</mes:CPAId>
+            <mes:ConversationId>02da9322-8f6d-415b-a40f-46f8ed0419n6</mes:ConversationId>
+            <mes:Service>GetReservationRQ</mes:Service>
+            <mes:Action>GetReservationRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>d9424771-cfc8-4258-a666-c9f516eb48e8</mes:MessageId>
+                <mes:Timestamp>2018-05-01T23:25:48</mes:Timestamp>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <v1:GetReservationRQ Version="1.19.0" >
+            <v1:RequestType>Stateful</v1:RequestType>
+            <v1:ReturnOptions UnmaskCreditCard="false" ShowTicketStatus="false" IncludePaymentCardToken="false">
+                <v1:ResponseFormat>STL</v1:ResponseFormat>
+            </v1:ReturnOptions>
+        </v1:GetReservationRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:07 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="urn:x12.org:IO5:01">SWS</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="urn:x12.org:IO5:01">SWS</eb:PartyId></eb:To><eb:CPAId>2B67</eb:CPAId><eb:ConversationId>02da9322-8f6d-415b-a40f-46f8ed0419n6</eb:ConversationId><eb:Service>GetReservationRQ</eb:Service><eb:Action>GetReservationRQ</eb:Action><eb:MessageData><eb:MessageId>905603115272581900</eb:MessageId><eb:Timestamp>2023-03-10T03:12:07</eb:Timestamp><eb:RefToMessageId>d9424771-cfc8-4258-a666-c9f516eb48e8</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><stl19:GetReservationRS xmlns:stl19="http://webservices.sabre.com/pnrbuilder/v1_19" xmlns:ns6="http://services.sabre.com/res/orr/v0" xmlns:or114="http://services.sabre.com/res/or/v1_14" xmlns:raw="http://tds.sabre.com/itinerary" xmlns:ns4="http://webservices.sabre.com/pnrconn/ReaccSearch" Version="1.19.0"><stl19:Reservation numberInParty="1" numberOfInfants="0" NumberInSegment="1"><stl19:BookingDetails><stl19:RecordLocator>XOLXVK</stl19:RecordLocator><stl19:CreationTimestamp>2022-11-02T07:59:00</stl19:CreationTimestamp><stl19:SystemCreationTimestamp>2022-11-02T07:59:00</stl19:SystemCreationTimestamp><stl19:CreationAgentID>APS</stl19:CreationAgentID><stl19:UpdateTimestamp>2023-03-09T12:37:58</stl19:UpdateTimestamp><stl19:PNRSequence>79</stl19:PNRSequence><stl19:FlightsRange Start="2022-12-02T18:35:00" End="2022-12-03T09:40:00"/><stl19:DivideSplitDetails/><stl19:EstimatedPurgeTimestamp>2023-04-24T00:00:00</stl19:EstimatedPurgeTimestamp><stl19:UpdateToken>-94d6ae353a57e3039f4304cc96cdbbad8b437de9dc68786</stl19:UpdateToken></stl19:BookingDetails><stl19:POS AirExtras="false" InhibitCode="U"><stl19:Source BookingSource="VK87" AgentSine="APS" PseudoCityCode="VK87" ISOCountry="US" AgentDutyCode="*" AirlineVendorID="AA" HomePseudoCityCode="57HG" PrimeHostID="1S"/></stl19:POS><stl19:PassengerReservation><stl19:Passengers><stl19:Passenger id="3" nameType="S" passengerType="ADT" nameId="01.01" nameAssocId="1" elementId="pnr-3.1"><stl19:LastName>ZEST</stl19:LastName><stl19:FirstName>ZESTO</stl19:FirstName><stl19:SpecialRequests><stl19:GenericSpecialRequest id="15" type="G" msgType="S"><stl19:Code>OTHS</stl19:Code><stl19:FreeText>.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE RULES TO AVOID AD</stl19:FreeText><stl19:ActionCode>KK</stl19:ActionCode><stl19:NumberInParty>1</stl19:NumberInParty><stl19:AirlineCode>1S</stl19:AirlineCode><stl19:FullText>OTHS 1S KK1.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE RULES TO AVOID AD</stl19:FullText></stl19:GenericSpecialRequest><stl19:GenericSpecialRequest id="14" type="A" msgType="S"><stl19:Code>OTHS</stl19:Code><stl19:FreeText>.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE RULES TO AVOID AD</stl19:FreeText><stl19:ActionCode>KK</stl19:ActionCode><stl19:NumberInParty>1</stl19:NumberInParty><stl19:AirlineCode>1S</stl19:AirlineCode><stl19:FullText>OTHS 1S KK1.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE RULES TO AVOID AD</stl19:FullText></stl19:GenericSpecialRequest></stl19:SpecialRequests><stl19:Seats/></stl19:Passenger></stl19:Passengers><stl19:Segments><stl19:Poc><stl19:Airport>AUS</stl19:Airport><stl19:Departure>2022-12-02T18:35:00</stl19:Departure></stl19:Poc><stl19:Segment sequence="1" id="6"><stl19:Air id="6" sequence="1" segmentAssociationId="2" isPast="true" DayOfWeekInd="5" CodeShare="false" SpecialMeal="false" SmokingAllowed="false" ResBookDesigCode="Y"><stl19:DepartureAirport>AUS</stl19:DepartureAirport><stl19:DepartureAirportCodeContext>IATA</stl19:DepartureAirportCodeContext><stl19:ArrivalAirport>LHR</stl19:ArrivalAirport><stl19:ArrivalAirportCodeContext>IATA</stl19:ArrivalAirportCodeContext><stl19:OperatingAirlineCode>VS</stl19:OperatingAirlineCode><stl19:OperatingAirlineShortName>VIRGIN ATLANTIC</stl19:OperatingAirlineShortName><stl19:OperatingFlightNumber>0232</stl19:OperatingFlightNumber><stl19:EquipmentType>789</stl19:EquipmentType><stl19:MarketingAirlineCode>VS</stl19:MarketingAirlineCode><stl19:MarketingFlightNumber>0232</stl19:MarketingFlightNumber><stl19:OperatingClassOfService>Y</stl19:OperatingClassOfService><stl19:MarketingClassOfService>Y</stl19:MarketingClassOfService><stl19:MarriageGrp><stl19:Ind>0</stl19:Ind><stl19:Group>0</stl19:Group><stl19:Sequence>0</stl19:Sequence></stl19:MarriageGrp><stl19:Seats/><stl19:AirlineRefId>DCVS*CTAUT8</stl19:AirlineRefId><stl19:Eticket>true</stl19:Eticket><stl19:DepartureDateTime>2022-12-02T18:35:00</stl19:DepartureDateTime><stl19:ArrivalDateTime>2022-12-03T09:40:00</stl19:ArrivalDateTime><stl19:FlightNumber>0232</stl19:FlightNumber><stl19:ClassOfService>Y</stl19:ClassOfService><stl19:ActionCode>HK</stl19:ActionCode><stl19:NumberInParty>1</stl19:NumberInParty><stl19:SegmentSpecialRequests/><stl19:inboundConnection>false</stl19:inboundConnection><stl19:outboundConnection>false</stl19:outboundConnection><stl19:ScheduleChangeIndicator>false</stl19:ScheduleChangeIndicator><stl19:SegmentBookedDate>2022-11-02T07:59:00</stl19:SegmentBookedDate><stl19:Cabin Code="Y" SabreCode="Y" Name="ECONOMY" ShortName="ECONOMY" Lang="EN"/><stl19:Banner>MARKETED BY VIRGIN ATLANTIC</stl19:Banner><stl19:Informational>false</stl19:Informational></stl19:Air><stl19:Product id="6"><or114:ProductDetails productCategory="AIR"><or114:ProductName type="AIR"/><or114:Air sequence="1" segmentAssociationId="2"><or114:DepartureAirport>AUS</or114:DepartureAirport><or114:ArrivalAirport>LHR</or114:ArrivalAirport><or114:EquipmentType>789</or114:EquipmentType><or114:MarketingAirlineCode>VS</or114:MarketingAirlineCode><or114:MarketingFlightNumber>232</or114:MarketingFlightNumber><or114:MarketingClassOfService>Y</or114:MarketingClassOfService><or114:MarriageGrp/><or114:Cabin code="Y" sabreCode="Y" name="ECONOMY" shortName="ECONOMY" lang="EN"/><or114:AirlineRefId>DCVS*CTAUT8</or114:AirlineRefId><or114:Eticket>true</or114:Eticket><or114:DepartureDateTime>2022-12-02T18:35:00</or114:DepartureDateTime><or114:ArrivalDateTime>2022-12-03T09:40:00</or114:ArrivalDateTime><or114:FlightNumber>232</or114:FlightNumber><or114:ClassOfService>Y</or114:ClassOfService><or114:ActionCode>HK</or114:ActionCode><or114:NumberInParty>1</or114:NumberInParty><or114:inboundConnection>false</or114:inboundConnection><or114:outboundConnection>false</or114:outboundConnection><or114:ScheduleChangeIndicator>false</or114:ScheduleChangeIndicator><or114:SegmentBookedDate>2022-11-02T07:59:00</or114:SegmentBookedDate></or114:Air></or114:ProductDetails></stl19:Product></stl19:Segment><stl19:Segment sequence="2" id="12"><stl19:General isPast="false" dayOfWeekInd="1"><stl19:Line Number="2" Type="OTH" Status="HK"/><stl19:Vendor Code="AA"/><stl19:NumberInParty>1</stl19:NumberInParty><stl19:DateTime>2023-04-24T00:00:00</stl19:DateTime><stl19:Text>INFORMATION</stl19:Text><stl19:Text>WE APPRECIATE YOUR BUSINESS</stl19:Text></stl19:General><stl19:Product id="12"><or114:ProductDetails productCategory="OTH" vendorCode="AA" statusCode="HK" previousStatusCode="HK"><or114:ProductName type="OTH"/></or114:ProductDetails></stl19:Product></stl19:Segment></stl19:Segments><stl19:TicketingInfo><stl19:FutureTicketing id="79" index="1" elementId="pnr-79"><stl19:Code>TAW</stl19:Code><stl19:Comment>OPA</stl19:Comment></stl19:FutureTicketing></stl19:TicketingInfo><stl19:ItineraryPricing/></stl19:PassengerReservation><stl19:DKNumbers><stl19:DKNumber>TEST123</stl19:DKNumber></stl19:DKNumbers><stl19:ReceivedFrom><stl19:Name>TEST</stl19:Name></stl19:ReceivedFrom><stl19:Addresses><stl19:Address><stl19:AddressLines><stl19:AddressLine id="9" type="O"><stl19:Text>APPLE INC</stl19:Text></stl19:AddressLine><stl19:AddressLine id="10" type="O"><stl19:Text>12345 RIATA VISTA CR</stl19:Text></stl19:AddressLine></stl19:AddressLines></stl19:Address></stl19:Addresses><stl19:PhoneNumbers><stl19:PhoneNumber id="5" index="1" elementId="pnr-5"><stl19:CityCode>AUS</stl19:CityCode><stl19:Number>9999999999</stl19:Number></stl19:PhoneNumber></stl19:PhoneNumbers><stl19:Remarks><stl19:Remark index="1" id="102" type="INVOICE" elementId="pnr-102"><stl19:RemarkLines><stl19:RemarkLine><stl19:Text>S*UD5 5064440</stl19:Text></stl19:RemarkLine></stl19:RemarkLines></stl19:Remark><stl19:Remark index="2" id="216" type="REG" elementId="pnr-216"><stl19:RemarkLines><stl19:RemarkLine><stl19:Text>S*UD16 VAKKI.AT.APPLE.COM</stl19:Text></stl19:RemarkLine></stl19:RemarkLines></stl19:Remark></stl19:Remarks><stl19:EmailAddresses/><stl19:OpenReservationElements><or114:OpenReservationElement id="14" type="SRVC" elementId="pnr-14"><or114:ServiceRequest actionCode="KK" airlineCode="1S" code="OTHS" serviceCount="1" serviceType="SSR" ssrType="AFX"><or114:Comment>UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE RULES TO AVOID AD</or114:Comment><or114:FreeText>.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE RULES TO AVOID AD</or114:FreeText><or114:FullText>OTHS 1S KK1.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE RULES TO AVOID AD</or114:FullText></or114:ServiceRequest><or114:NameAssociation><or114:LastName>ZEST</or114:LastName><or114:FirstName>ZESTO</or114:FirstName><or114:NameRefNumber>01.01</or114:NameRefNumber><or114:ReferenceId>1</or114:ReferenceId></or114:NameAssociation></or114:OpenReservationElement><or114:OpenReservationElement id="15" type="SRVC" elementId="pnr-15"><or114:ServiceRequest actionCode="KK" airlineCode="1S" code="OTHS" serviceCount="1" serviceType="SSR" ssrType="GFX"><or114:Comment>UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE RULES TO AVOID AD</or114:Comment><or114:FreeText>.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE RULES TO AVOID AD</or114:FreeText><or114:FullText>OTHS 1S KK1.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE RULES TO AVOID AD</or114:FullText></or114:ServiceRequest><or114:NameAssociation><or114:LastName>ZEST</or114:LastName><or114:FirstName>ZESTO</or114:FirstName><or114:NameRefNumber>01.01</or114:NameRefNumber><or114:ReferenceId>1</or114:ReferenceId></or114:NameAssociation></or114:OpenReservationElement></stl19:OpenReservationElements></stl19:Reservation></stl19:GetReservationRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:08 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>*XOLXVK</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:08 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>905743115278011060</eb:MessageId><eb:Timestamp>2023-03-10T03:12:08</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response> 1.1ZEST/ZESTO
+ 2  OTH AA 24APR M HK1  INFORMATION/WE APPRECIATE YOUR BUSINESS
+TKT/TIME LIMIT
+  1.TAW/OPA
+PHONES
+  1.AUS9999999999
+CUSTOMER NUMBER - TEST123   
+ADDRESS
+    APPLE INC
+    12345 RIATA VISTA CR
+AA FACTS
+  1.SSR OTHS 1S KK1.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE
+     RULES TO AVOID AD
+GENERAL FACTS
+  1.SSR OTHS 1S KK1.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE
+     RULES TO AVOID AD
+REMARKS
+  1..S*UD5 5064440
+  2.S*UD16 VAKKI.AT.APPLE.COM
+RECEIVED FROM - TEST
+VK87.57HG*APS 0759/02NOV22 XOLXVK H</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:11 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>5 ATP found for Vikas Akki</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:11 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>905910115312970890</eb:MessageId><eb:Timestamp>2023-03-10T03:12:11</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>* 
+</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:12 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>5KOPA APPROVAL DENIED</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:12 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>906015115325491660</eb:MessageId><eb:Timestamp>2023-03-10T03:12:12</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>* 
+</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:13 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>5H-APPROB IDENTIFIED OPA DENIED BY AN APPROVER</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:13 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>906266115330240630</eb:MessageId><eb:Timestamp>2023-03-10T03:12:13</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>* 
+</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:13 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>6TEST</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:13 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>906141115334940110</eb:MessageId><eb:Timestamp>2023-03-10T03:12:13</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>* 
+</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:14 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>ER</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:14 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>906218115339570470</eb:MessageId><eb:Timestamp>2023-03-10T03:12:14</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response> 1.1ZEST/ZESTO
+ 2  OTH AA 24APR M HK1  INFORMATION/WE APPRECIATE YOUR BUSINESS
+TKT/TIME LIMIT
+  1.TAW/OPA
+PHONES
+  1.AUS9999999999
+CUSTOMER NUMBER - TEST123   
+ADDRESS
+    APPLE INC
+    12345 RIATA VISTA CR
+AA FACTS
+  1.SSR OTHS 1S KK1.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE
+     RULES TO AVOID AD
+GENERAL FACTS
+  1.SSR OTHS 1S KK1.UNTKTDVS SEGS MAY CANX 01DEC22 TKT PER FARE
+     RULES TO AVOID AD
+REMARKS
+  1..S*UD5 5064440
+  2.S*UD16 VAKKI.AT.APPLE.COM
+  3. ATP FOUND FOR VIKAS AKKI
+  4.KOPA APPROVAL DENIED
+  5.H-APPROB IDENTIFIED OPA DENIED BY AN APPROVER
+RECEIVED FROM - TEST
+VK87.57HG*APS 0759/02NOV22 XOLXVK H</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:15 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>QP/VK87116/11</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:15 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>906272115346751090</eb:MessageId><eb:Timestamp>2023-03-10T03:12:15</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>      011  SEE REMARKS
+ 1.1TEST/TESTO
+ 1 AA1333Y 23JUN 5 AUSDFW HX1  1258  1411  /DCAA*KNVLKD /E
+TKT/TIME LIMIT
+  1.TAW/22JUN
+PHONES
+  1.AUS9999999999
+CUSTOMER NUMBER - TEST12    
+ADDRESS
+    TEST
+AA FACTS
+  1.SSR ADTK 1S KK01 AA WILL CANCEL IF NO TKT BY 2359 10MAR CST
+  2.SSR OTHS 1S HX CANCELED DUE TO SYSTEM OR PASSENGER ACTION
+  3.SSR OTHS 1S HX DELETE HX SEGS FROM PNR TO KEEP RES IN SYNCH
+GENERAL FACTS
+  1.SSR OTHS 1S CANCELLED DUE TO FICTITIOUS NAME 09MAR
+REMARKS
+  1.S*UD5 5064440
+  2.S*UD16 VAKKI.AT.APPLE.COM
+RECEIVED FROM - TEST
+VK87.VK87*A02 0852/09MAR23 ELGNMT H</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:16 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>*P6</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:16 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>906369115362021770</eb:MessageId><eb:Timestamp>2023-03-10T03:12:16</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>RECEIVED FROM - TEST
+VK87.VK87*A02 0852/09MAR23 ELGNMT H</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:17 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:v1="http://webservices.sabre.com/pnrbuilder/v1_19" xmlns:v11="http://services.sabre.com/res/or/v1_14">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader>
+            <mes:From>
+                <mes:PartyId mes:type="urn:x12.org:IO5:01">SWS</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId mes:type="urn:x12.org:IO5:01">SWS</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>2B67</mes:CPAId>
+            <mes:ConversationId>02da9322-8f6d-415b-a40f-46f8ed0419n6</mes:ConversationId>
+            <mes:Service>GetReservationRQ</mes:Service>
+            <mes:Action>GetReservationRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>d9424771-cfc8-4258-a666-c9f516eb48e8</mes:MessageId>
+                <mes:Timestamp>2018-05-01T23:25:48</mes:Timestamp>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <v1:GetReservationRQ Version="1.19.0" >
+            <v1:RequestType>Stateful</v1:RequestType>
+            <v1:ReturnOptions UnmaskCreditCard="false" ShowTicketStatus="false" IncludePaymentCardToken="false">
+                <v1:ResponseFormat>STL</v1:ResponseFormat>
+            </v1:ReturnOptions>
+        </v1:GetReservationRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:17 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="urn:x12.org:IO5:01">SWS</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="urn:x12.org:IO5:01">SWS</eb:PartyId></eb:To><eb:CPAId>2B67</eb:CPAId><eb:ConversationId>02da9322-8f6d-415b-a40f-46f8ed0419n6</eb:ConversationId><eb:Service>GetReservationRQ</eb:Service><eb:Action>GetReservationRQ</eb:Action><eb:MessageData><eb:MessageId>906402115367861900</eb:MessageId><eb:Timestamp>2023-03-10T03:12:16</eb:Timestamp><eb:RefToMessageId>d9424771-cfc8-4258-a666-c9f516eb48e8</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><stl19:GetReservationRS xmlns:stl19="http://webservices.sabre.com/pnrbuilder/v1_19" xmlns:ns6="http://services.sabre.com/res/orr/v0" xmlns:or114="http://services.sabre.com/res/or/v1_14" xmlns:raw="http://tds.sabre.com/itinerary" xmlns:ns4="http://webservices.sabre.com/pnrconn/ReaccSearch" Version="1.19.0"><stl19:Reservation numberInParty="1" numberOfInfants="0" NumberInSegment="1"><stl19:BookingDetails><stl19:RecordLocator>ELGNMT</stl19:RecordLocator><stl19:CreationTimestamp>2023-03-09T08:52:00</stl19:CreationTimestamp><stl19:SystemCreationTimestamp>2023-03-09T08:52:00</stl19:SystemCreationTimestamp><stl19:CreationAgentID>A02</stl19:CreationAgentID><stl19:UpdateTimestamp>2023-03-09T20:47:31</stl19:UpdateTimestamp><stl19:PNRSequence>10</stl19:PNRSequence><stl19:FlightsRange Start="2023-06-23T12:58:00" End="2023-06-23T14:11:00"/><stl19:DivideSplitDetails/><stl19:EstimatedPurgeTimestamp>2023-06-23T00:00:00</stl19:EstimatedPurgeTimestamp><stl19:UpdateToken>171da370da788fa0a15cb81058b5de2872101e212b151117</stl19:UpdateToken></stl19:BookingDetails><stl19:POS AirExtras="false" InhibitCode="U"><stl19:Source BookingSource="VK87" AgentSine="A02" PseudoCityCode="VK87" ISOCountry="US" AgentDutyCode="*" AirlineVendorID="AA" HomePseudoCityCode="VK87" PrimeHostID="1S"/></stl19:POS><stl19:PassengerReservation><stl19:Passengers><stl19:Passenger id="3" nameType="S" passengerType="ADT" nameId="01.01" nameAssocId="1" elementId="pnr-3.1"><stl19:LastName>TEST</stl19:LastName><stl19:FirstName>TESTO</stl19:FirstName><stl19:Seats/></stl19:Passenger></stl19:Passengers><stl19:Segments><stl19:Poc><stl19:Airport>AUS</stl19:Airport><stl19:Departure>2023-06-23T12:58:00</stl19:Departure></stl19:Poc><stl19:Segment sequence="1" id="7"><stl19:Air id="7" sequence="1" segmentAssociationId="2" isPast="false" DayOfWeekInd="5" CodeShare="false" SpecialMeal="false" StopQuantity="00" SmokingAllowed="false" ResBookDesigCode="Y" Code="AA"><stl19:DepartureAirport>AUS</stl19:DepartureAirport><stl19:DepartureAirportCodeContext>IATA</stl19:DepartureAirportCodeContext><stl19:ArrivalAirport>DFW</stl19:ArrivalAirport><stl19:ArrivalAirportCodeContext>IATA</stl19:ArrivalAirportCodeContext><stl19:OperatingAirlineCode>AA</stl19:OperatingAirlineCode><stl19:OperatingAirlineShortName>AMERICAN AIRLINES</stl19:OperatingAirlineShortName><stl19:OperatingFlightNumber>1333</stl19:OperatingFlightNumber><stl19:EquipmentType>320</stl19:EquipmentType><stl19:MarketingAirlineCode>AA</stl19:MarketingAirlineCode><stl19:MarketingFlightNumber>1333</stl19:MarketingFlightNumber><stl19:OperatingClassOfService>Y</stl19:OperatingClassOfService><stl19:MarketingClassOfService>Y</stl19:MarketingClassOfService><stl19:MarriageGrp><stl19:Ind>0</stl19:Ind><stl19:Group>0</stl19:Group><stl19:Sequence>0</stl19:Sequence></stl19:MarriageGrp><stl19:Seats/><stl19:AirlineRefId>DCAA*KNVLKD</stl19:AirlineRefId><stl19:Eticket>true</stl19:Eticket><stl19:DepartureDateTime>2023-06-23T12:58:00</stl19:DepartureDateTime><stl19:ArrivalDateTime>2023-06-23T14:11:00</stl19:ArrivalDateTime><stl19:FlightNumber>1333</stl19:FlightNumber><stl19:ClassOfService>Y</stl19:ClassOfService><stl19:ActionCode>HX</stl19:ActionCode><stl19:NumberInParty>1</stl19:NumberInParty><stl19:SegmentSpecialRequests/><stl19:inboundConnection>false</stl19:inboundConnection><stl19:outboundConnection>false</stl19:outboundConnection><stl19:ScheduleChangeIndicator>false</stl19:ScheduleChangeIndicator><stl19:SegmentBookedDate>2023-03-09T08:52:00</stl19:SegmentBookedDate><stl19:ElapsedTime>01.13</stl19:ElapsedTime><stl19:AirMilesFlown>0189</stl19:AirMilesFlown><stl19:FunnelFlight>false</stl19:FunnelFlight><stl19:ChangeOfGauge>false</stl19:ChangeOfGauge><stl19:Cabin Code="Y" SabreCode="Y" Name="ECONOMY" ShortName="ECONOMY" Lang="EN"/><stl19:Banner>MARKETED BY AMERICAN AIRLINES</stl19:Banner><stl19:Informational>false</stl19:Informational></stl19:Air><stl19:Product id="7"><or114:ProductDetails productCategory="AIR"><or114:ProductName type="AIR"/><or114:Air sequence="1" segmentAssociationId="2"><or114:DepartureAirport>AUS</or114:DepartureAirport><or114:ArrivalAirport>DFW</or114:ArrivalAirport><or114:EquipmentType>320</or114:EquipmentType><or114:MarketingAirlineCode>AA</or114:MarketingAirlineCode><or114:MarketingFlightNumber>1333</or114:MarketingFlightNumber><or114:MarketingClassOfService>Y</or114:MarketingClassOfService><or114:MarriageGrp/><or114:Cabin code="Y" sabreCode="Y" name="ECONOMY" shortName="ECONOMY" lang="EN"/><or114:ElapsedTime>73</or114:ElapsedTime><or114:AirMilesFlown>189</or114:AirMilesFlown><or114:FunnelFlight>false</or114:FunnelFlight><or114:ChangeOfGauge>false</or114:ChangeOfGauge><or114:DisclosureCarrier Code="AA" DOT="false"><or114:Banner>AMERICAN AIRLINES</or114:Banner></or114:DisclosureCarrier><or114:AirlineRefId>DCAA*KNVLKD</or114:AirlineRefId><or114:Eticket>true</or114:Eticket><or114:DepartureDateTime>2023-06-23T12:58:00</or114:DepartureDateTime><or114:ArrivalDateTime>2023-06-23T14:11:00</or114:ArrivalDateTime><or114:FlightNumber>1333</or114:FlightNumber><or114:ClassOfService>Y</or114:ClassOfService><or114:ActionCode>HX</or114:ActionCode><or114:NumberInParty>1</or114:NumberInParty><or114:inboundConnection>false</or114:inboundConnection><or114:outboundConnection>false</or114:outboundConnection><or114:ScheduleChangeIndicator>false</or114:ScheduleChangeIndicator><or114:SegmentBookedDate>2023-03-09T08:52:00</or114:SegmentBookedDate></or114:Air></or114:ProductDetails></stl19:Product></stl19:Segment></stl19:Segments><stl19:TicketingInfo><stl19:FutureTicketing id="11" index="1" elementId="pnr-11"><stl19:Code>TAW</stl19:Code><stl19:Comment>22JUN</stl19:Comment></stl19:FutureTicketing></stl19:TicketingInfo><stl19:ItineraryPricing/></stl19:PassengerReservation><stl19:DKNumbers><stl19:DKNumber>TEST12</stl19:DKNumber></stl19:DKNumbers><stl19:ReceivedFrom><stl19:Name>TEST</stl19:Name></stl19:ReceivedFrom><stl19:Addresses><stl19:Address><stl19:AddressLines><stl19:AddressLine id="10" type="O"><stl19:Text>TEST</stl19:Text></stl19:AddressLine></stl19:AddressLines></stl19:Address></stl19:Addresses><stl19:PhoneNumbers><stl19:PhoneNumber id="5" index="1" elementId="pnr-5"><stl19:CityCode>AUS</stl19:CityCode><stl19:Number>9999999999</stl19:Number></stl19:PhoneNumber></stl19:PhoneNumbers><stl19:Remarks><stl19:Remark index="1" id="8" type="REG" elementId="pnr-8"><stl19:RemarkLines><stl19:RemarkLine><stl19:Text>S*UD5 5064440</stl19:Text></stl19:RemarkLine></stl19:RemarkLines></stl19:Remark><stl19:Remark index="2" id="19" type="REG" elementId="pnr-19"><stl19:RemarkLines><stl19:RemarkLine><stl19:Text>S*UD16 VAKKI.AT.APPLE.COM</stl19:Text></stl19:RemarkLine></stl19:RemarkLines></stl19:Remark></stl19:Remarks><stl19:EmailAddresses/><stl19:GenericSpecialRequests id="18" type="A" msgType="S"><stl19:Code>ADTK</stl19:Code><stl19:FreeText>AA WILL CANCEL IF NO TKT BY 2359 10MAR CST</stl19:FreeText><stl19:ActionCode>KK</stl19:ActionCode><stl19:NumberInParty>1</stl19:NumberInParty><stl19:AirlineCode>1S</stl19:AirlineCode><stl19:FullText>ADTK 1S KK01 AA WILL CANCEL IF NO TKT BY 2359 10MAR CST</stl19:FullText></stl19:GenericSpecialRequests><stl19:GenericSpecialRequests id="21" type="A" msgType="S"><stl19:Code>OTHS</stl19:Code><stl19:FreeText>HX CANCELED DUE TO SYSTEM OR PASSENGER ACTION</stl19:FreeText><stl19:AirlineCode>1S</stl19:AirlineCode><stl19:FullText>OTHS 1S HX CANCELED DUE TO SYSTEM OR PASSENGER ACTION</stl19:FullText></stl19:GenericSpecialRequests><stl19:GenericSpecialRequests id="22" type="A" msgType="S"><stl19:Code>OTHS</stl19:Code><stl19:FreeText>HX DELETE HX SEGS FROM PNR TO KEEP RES IN SYNCH</stl19:FreeText><stl19:AirlineCode>1S</stl19:AirlineCode><stl19:FullText>OTHS 1S HX DELETE HX SEGS FROM PNR TO KEEP RES IN SYNCH</stl19:FullText></stl19:GenericSpecialRequests><stl19:GenericSpecialRequests id="23" type="G" msgType="S"><stl19:Code>OTHS</stl19:Code><stl19:FreeText>CANCELLED DUE TO FICTITIOUS NAME 09MAR</stl19:FreeText><stl19:AirlineCode>1S</stl19:AirlineCode><stl19:FullText>OTHS 1S CANCELLED DUE TO FICTITIOUS NAME 09MAR</stl19:FullText></stl19:GenericSpecialRequests><stl19:OpenReservationElements><or114:OpenReservationElement id="18" type="SRVC" elementId="pnr-18"><or114:ServiceRequest actionCode="KK" airlineCode="1S" code="ADTK" serviceCount="01" serviceType="SSR" ssrType="AFX"><or114:FreeText>AA WILL CANCEL IF NO TKT BY 2359 10MAR CST</or114:FreeText><or114:FullText>ADTK 1S KK01 AA WILL CANCEL IF NO TKT BY 2359 10MAR CST</or114:FullText></or114:ServiceRequest></or114:OpenReservationElement><or114:OpenReservationElement id="21" type="SRVC" elementId="pnr-21"><or114:ServiceRequest airlineCode="1S" code="OTHS" serviceType="SSR" ssrType="AFX"><or114:FreeText>HX CANCELED DUE TO SYSTEM OR PASSENGER ACTION</or114:FreeText><or114:FullText>OTHS 1S HX CANCELED DUE TO SYSTEM OR PASSENGER ACTION</or114:FullText></or114:ServiceRequest></or114:OpenReservationElement><or114:OpenReservationElement id="22" type="SRVC" elementId="pnr-22"><or114:ServiceRequest airlineCode="1S" code="OTHS" serviceType="SSR" ssrType="AFX"><or114:FreeText>HX DELETE HX SEGS FROM PNR TO KEEP RES IN SYNCH</or114:FreeText><or114:FullText>OTHS 1S HX DELETE HX SEGS FROM PNR TO KEEP RES IN SYNCH</or114:FullText></or114:ServiceRequest></or114:OpenReservationElement><or114:OpenReservationElement id="23" type="SRVC" elementId="pnr-23"><or114:ServiceRequest airlineCode="1S" code="OTHS" serviceType="SSR" ssrType="GFX"><or114:FreeText>CANCELLED DUE TO FICTITIOUS NAME 09MAR</or114:FreeText><or114:FullText>OTHS 1S CANCELLED DUE TO FICTITIOUS NAME 09MAR</or114:FullText></or114:ServiceRequest></or114:OpenReservationElement></stl19:OpenReservationElements></stl19:Reservation></stl19:GetReservationRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:17 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>*ELGNMT</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:17 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>906345115374002180</eb:MessageId><eb:Timestamp>2023-03-10T03:12:17</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response> 1.1TEST/TESTO
+ 1 AA1333Y 23JUN 5 AUSDFW HX1  1258  1411  /DCAA*KNVLKD /E
+TKT/TIME LIMIT
+  1.TAW/22JUN
+PHONES
+  1.AUS9999999999
+CUSTOMER NUMBER - TEST12    
+ADDRESS
+    TEST
+AA FACTS
+  1.SSR ADTK 1S KK01 AA WILL CANCEL IF NO TKT BY 2359 10MAR CST
+  2.SSR OTHS 1S HX CANCELED DUE TO SYSTEM OR PASSENGER ACTION
+  3.SSR OTHS 1S HX DELETE HX SEGS FROM PNR TO KEEP RES IN SYNCH
+GENERAL FACTS
+  1.SSR OTHS 1S CANCELLED DUE TO FICTITIOUS NAME 09MAR
+REMARKS
+  1.S*UD5 5064440
+  2.S*UD16 VAKKI.AT.APPLE.COM
+RECEIVED FROM - TEST
+VK87.VK87*A02 0852/09MAR23 ELGNMT H</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:20 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>5 ATP found for Vikas Akki</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:20 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>906725115403600340</eb:MessageId><eb:Timestamp>2023-03-10T03:12:20</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>* 
+</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:21 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>5KOPA APPROVAL APPROVED</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:21 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>906820115415990340</eb:MessageId><eb:Timestamp>2023-03-10T03:12:21</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>* 
+</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:22 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>5H-APPROB IDENTIFIED OPA FULLY APPROVED</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:22 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>906881115420890890</eb:MessageId><eb:Timestamp>2023-03-10T03:12:22</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>* 
+</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:22 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>5.S*UD56 APPROVED</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:22 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>906919115426171020</eb:MessageId><eb:Timestamp>2023-03-10T03:12:22</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>* 
+</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:23 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>6TEST</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:23 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>906856115430860210</eb:MessageId><eb:Timestamp>2023-03-10T03:12:23</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>* 
+</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:23 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>ER</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:23 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>907087115435731050</eb:MessageId><eb:Timestamp>2023-03-10T03:12:23</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response> 1.1TEST/TESTO
+ 1 AA1333Y 23JUN 5 AUSDFW HX1  1258  1411  /DCAA*KNVLKD /E
+TKT/TIME LIMIT
+  1.TAW/22JUN
+PHONES
+  1.AUS9999999999
+CUSTOMER NUMBER - TEST12    
+ADDRESS
+    TEST
+AA FACTS
+  1.SSR ADTK 1S KK01 AA WILL CANCEL IF NO TKT BY 2359 10MAR CST
+  2.SSR OTHS 1S HX CANCELED DUE TO SYSTEM OR PASSENGER ACTION
+  3.SSR OTHS 1S HX DELETE HX SEGS FROM PNR TO KEEP RES IN SYNCH
+GENERAL FACTS
+  1.SSR OTHS 1S CANCELLED DUE TO FICTITIOUS NAME 09MAR
+REMARKS
+  1.S*UD5 5064440
+  2.S*UD16 VAKKI.AT.APPLE.COM
+  3. ATP FOUND FOR VIKAS AKKI
+  4.KOPA APPROVAL APPROVED
+  5.H-APPROB IDENTIFIED OPA FULLY APPROVED
+  6..S*UD56 APPROVED
+RECEIVED FROM - TEST
+VK87.VK87*A02 0852/09MAR23 ELGNMT H</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:25 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>QP/VK87116/11</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:42:25 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>906942115442891230</eb:MessageId><eb:Timestamp>2023-03-10T03:12:25</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678417924113!8865!297!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>END OF DISPLAY FOR REQUESTED DATA</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:43:27 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <SOAP-ENV:Envelope
+        xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:eb="http://www.ebxml.org/namespaces/messageHeader"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:xsd="http://www.w3.org/1999/XMLSchema">
+        <SOAP-ENV:Header>
+            <eb:MessageHeader SOAP-ENV:mustUnderstand="1" eb:version="2.0">
+                <eb:ConversationId>2021-02-04-11184</eb:ConversationId>
+                <eb:From>
+                    <eb:PartyId type="urn:x12.org:IO5:01">Turbo</eb:PartyId>
+                </eb:From>
+                <eb:To>
+                    <eb:PartyId type="urn:x12.org:IO5:01">webservices.sabre.com</eb:PartyId>
+                </eb:To>
+                <eb:CPAId>57HG</eb:CPAId>
+                <eb:Service eb:type="sabreXML">Session</eb:Service>
+                <eb:Action>SessionCreateRQ</eb:Action>
+                <eb:MessageData>
+                    <eb:MessageId>mid:1000</eb:MessageId>
+                    <eb:Timestamp>2022-12-04T18:27:23Z</eb:Timestamp>
+                    <eb:TimeToLive>2022-12-04T18:57:23Z</eb:TimeToLive>
+                </eb:MessageData>
+            </eb:MessageHeader>
+            <wsse:Security
+                xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"
+                xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/12/utility">
+                <wsse:UsernameToken>
+                    <wsse:Username>2222</wsse:Username>
+                    <wsse:Password>vgbhnj12</wsse:Password>
+                    <Organization>57HG</Organization>
+                    <Domain>AA</Domain>
+                </wsse:UsernameToken>
+            </wsse:Security>
+        </SOAP-ENV:Header>
+        <SOAP-ENV:Body>
+            <SessionCreateRQ returnContextID="true">
+                <POS>
+                    <Source PseudoCityCode="57HG"/>
+                </POS>
+            </SessionCreateRQ>
+        </SOAP-ENV:Body>
+    </SOAP-ENV:Envelope>
+2023/03/10 08:43:27 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SessionCreateRS</eb:Action><eb:MessageData><eb:MessageId>912023116073120110</eb:MessageId><eb:Timestamp>2023-03-10T03:13:27</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESA!ICESMSLB\/RES.LB!1678418007339!6709!269!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SessionCreateRS xmlns="http://www.opentravel.org/OTA/2002/11" version="1" status="Approved">	<ConversationId>2021-02-04-11184</ConversationId></SessionCreateRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:43:27 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESA!ICESMSLB\/RES.LB!1678418007339!6709!269!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>qc/1I0G117</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:43:27 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>912018116078081110</eb:MessageId><eb:Timestamp>2023-03-10T03:13:27</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESA!ICESMSLB\/RES.LB!1678418007339!6709!269!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>             ON QUEUE AS OF 1113 ON 10MAR FOR 1I0G
+1I0G QUEUE 117  HAS       0 PNRS
+</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:44:40 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <SOAP-ENV:Envelope
+        xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:eb="http://www.ebxml.org/namespaces/messageHeader"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:xsd="http://www.w3.org/1999/XMLSchema">
+        <SOAP-ENV:Header>
+            <eb:MessageHeader SOAP-ENV:mustUnderstand="1" eb:version="2.0">
+                <eb:ConversationId>2021-02-04-11184</eb:ConversationId>
+                <eb:From>
+                    <eb:PartyId type="urn:x12.org:IO5:01">Turbo</eb:PartyId>
+                </eb:From>
+                <eb:To>
+                    <eb:PartyId type="urn:x12.org:IO5:01">webservices.sabre.com</eb:PartyId>
+                </eb:To>
+                <eb:CPAId>57HG</eb:CPAId>
+                <eb:Service eb:type="sabreXML">Session</eb:Service>
+                <eb:Action>SessionCreateRQ</eb:Action>
+                <eb:MessageData>
+                    <eb:MessageId>mid:1000</eb:MessageId>
+                    <eb:Timestamp>2022-12-04T18:27:23Z</eb:Timestamp>
+                    <eb:TimeToLive>2022-12-04T18:57:23Z</eb:TimeToLive>
+                </eb:MessageData>
+            </eb:MessageHeader>
+            <wsse:Security
+                xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"
+                xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/12/utility">
+                <wsse:UsernameToken>
+                    <wsse:Username>2222</wsse:Username>
+                    <wsse:Password>vgbhnj12</wsse:Password>
+                    <Organization>57HG</Organization>
+                    <Domain>AA</Domain>
+                </wsse:UsernameToken>
+            </wsse:Security>
+        </SOAP-ENV:Header>
+        <SOAP-ENV:Body>
+            <SessionCreateRQ returnContextID="true">
+                <POS>
+                    <Source PseudoCityCode="57HG"/>
+                </POS>
+            </SessionCreateRQ>
+        </SOAP-ENV:Body>
+    </SOAP-ENV:Envelope>
+2023/03/10 08:44:40 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SessionCreateRS</eb:Action><eb:MessageData><eb:MessageId>917692116799390870</eb:MessageId><eb:Timestamp>2023-03-10T03:14:39</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESG!ICESMSLB\/RES.LB!1678418079960!6072!273!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SessionCreateRS xmlns="http://www.opentravel.org/OTA/2002/11" version="1" status="Approved">	<ConversationId>2021-02-04-11184</ConversationId></SessionCreateRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:44:40 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESG!ICESMSLB\/RES.LB!1678418079960!6072!273!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>qc/VK87117</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:44:40 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>917657116804130210</eb:MessageId><eb:Timestamp>2023-03-10T03:14:40</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESG!ICESMSLB\/RES.LB!1678418079960!6072!273!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>             ON QUEUE AS OF 2114 ON 09MAR FOR VK87
+VK87 QUEUE 117  HAS       0 PNRS
+</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:50:54 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <SOAP-ENV:Envelope
+        xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:eb="http://www.ebxml.org/namespaces/messageHeader"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:xsd="http://www.w3.org/1999/XMLSchema">
+        <SOAP-ENV:Header>
+            <eb:MessageHeader SOAP-ENV:mustUnderstand="1" eb:version="2.0">
+                <eb:ConversationId>2021-02-04-11184</eb:ConversationId>
+                <eb:From>
+                    <eb:PartyId type="urn:x12.org:IO5:01">Turbo</eb:PartyId>
+                </eb:From>
+                <eb:To>
+                    <eb:PartyId type="urn:x12.org:IO5:01">webservices.sabre.com</eb:PartyId>
+                </eb:To>
+                <eb:CPAId>57HG</eb:CPAId>
+                <eb:Service eb:type="sabreXML">Session</eb:Service>
+                <eb:Action>SessionCreateRQ</eb:Action>
+                <eb:MessageData>
+                    <eb:MessageId>mid:1000</eb:MessageId>
+                    <eb:Timestamp>2022-12-04T18:27:23Z</eb:Timestamp>
+                    <eb:TimeToLive>2022-12-04T18:57:23Z</eb:TimeToLive>
+                </eb:MessageData>
+            </eb:MessageHeader>
+            <wsse:Security
+                xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"
+                xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/12/utility">
+                <wsse:UsernameToken>
+                    <wsse:Username>2222</wsse:Username>
+                    <wsse:Password>vgbhnj12</wsse:Password>
+                    <Organization>57HG</Organization>
+                    <Domain>AA</Domain>
+                </wsse:UsernameToken>
+            </wsse:Security>
+        </SOAP-ENV:Header>
+        <SOAP-ENV:Body>
+            <SessionCreateRQ returnContextID="true">
+                <POS>
+                    <Source PseudoCityCode="57HG"/>
+                </POS>
+            </SessionCreateRQ>
+        </SOAP-ENV:Body>
+    </SOAP-ENV:Envelope>
+2023/03/10 08:50:54 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SessionCreateRS</eb:Action><eb:MessageData><eb:MessageId>946426120538081060</eb:MessageId><eb:Timestamp>2023-03-10T03:20:53</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESF!ICESMSLB\/RES.LB!1678418453830!1543!305!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SessionCreateRS xmlns="http://www.opentravel.org/OTA/2002/11" version="1" status="Approved">	<ConversationId>2021-02-04-11184</ConversationId></SessionCreateRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:50:55 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESF!ICESMSLB\/RES.LB!1678418453830!1543!305!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>qc/VK87117</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:50:55 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>946378120549680890</eb:MessageId><eb:Timestamp>2023-03-10T03:20:55</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESF!ICESMSLB\/RES.LB!1678418453830!1543!305!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>             ON QUEUE AS OF 2120 ON 09MAR FOR VK87
+VK87 QUEUE 117  HAS       0 PNRS
+</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:51:56 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <SOAP-ENV:Envelope
+        xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:eb="http://www.ebxml.org/namespaces/messageHeader"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:xsd="http://www.w3.org/1999/XMLSchema">
+        <SOAP-ENV:Header>
+            <eb:MessageHeader SOAP-ENV:mustUnderstand="1" eb:version="2.0">
+                <eb:ConversationId>2021-02-04-11184</eb:ConversationId>
+                <eb:From>
+                    <eb:PartyId type="urn:x12.org:IO5:01">Turbo</eb:PartyId>
+                </eb:From>
+                <eb:To>
+                    <eb:PartyId type="urn:x12.org:IO5:01">webservices.sabre.com</eb:PartyId>
+                </eb:To>
+                <eb:CPAId>57HG</eb:CPAId>
+                <eb:Service eb:type="sabreXML">Session</eb:Service>
+                <eb:Action>SessionCreateRQ</eb:Action>
+                <eb:MessageData>
+                    <eb:MessageId>mid:1000</eb:MessageId>
+                    <eb:Timestamp>2022-12-04T18:27:23Z</eb:Timestamp>
+                    <eb:TimeToLive>2022-12-04T18:57:23Z</eb:TimeToLive>
+                </eb:MessageData>
+            </eb:MessageHeader>
+            <wsse:Security
+                xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"
+                xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/12/utility">
+                <wsse:UsernameToken>
+                    <wsse:Username>2222</wsse:Username>
+                    <wsse:Password>vgbhnj12</wsse:Password>
+                    <Organization>57HG</Organization>
+                    <Domain>AA</Domain>
+                </wsse:UsernameToken>
+            </wsse:Security>
+        </SOAP-ENV:Header>
+        <SOAP-ENV:Body>
+            <SessionCreateRQ returnContextID="true">
+                <POS>
+                    <Source PseudoCityCode="57HG"/>
+                </POS>
+            </SessionCreateRQ>
+        </SOAP-ENV:Body>
+    </SOAP-ENV:Envelope>
+2023/03/10 08:51:56 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SessionCreateRS</eb:Action><eb:MessageData><eb:MessageId>951259121164361660</eb:MessageId><eb:Timestamp>2023-03-10T03:21:56</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678418516458!237!301!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SessionCreateRS xmlns="http://www.opentravel.org/OTA/2002/11" version="1" status="Approved">	<ConversationId>2021-02-04-11184</ConversationId></SessionCreateRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:51:57 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678418516458!237!301!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>qc/1I0G117</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:51:57 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>951379121169070890</eb:MessageId><eb:Timestamp>2023-03-10T03:21:56</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESC!ICESMSLB\/RES.LB!1678418516458!237!301!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>             ON QUEUE AS OF 1121 ON 10MAR FOR 1I0G
+1I0G QUEUE 117  HAS       0 PNRS
+</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:52:59 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <SOAP-ENV:Envelope
+        xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:eb="http://www.ebxml.org/namespaces/messageHeader"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:xsd="http://www.w3.org/1999/XMLSchema">
+        <SOAP-ENV:Header>
+            <eb:MessageHeader SOAP-ENV:mustUnderstand="1" eb:version="2.0">
+                <eb:ConversationId>2021-02-04-11184</eb:ConversationId>
+                <eb:From>
+                    <eb:PartyId type="urn:x12.org:IO5:01">Turbo</eb:PartyId>
+                </eb:From>
+                <eb:To>
+                    <eb:PartyId type="urn:x12.org:IO5:01">webservices.sabre.com</eb:PartyId>
+                </eb:To>
+                <eb:CPAId>57HG</eb:CPAId>
+                <eb:Service eb:type="sabreXML">Session</eb:Service>
+                <eb:Action>SessionCreateRQ</eb:Action>
+                <eb:MessageData>
+                    <eb:MessageId>mid:1000</eb:MessageId>
+                    <eb:Timestamp>2022-12-04T18:27:23Z</eb:Timestamp>
+                    <eb:TimeToLive>2022-12-04T18:57:23Z</eb:TimeToLive>
+                </eb:MessageData>
+            </eb:MessageHeader>
+            <wsse:Security
+                xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"
+                xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/12/utility">
+                <wsse:UsernameToken>
+                    <wsse:Username>2222</wsse:Username>
+                    <wsse:Password>vgbhnj12</wsse:Password>
+                    <Organization>57HG</Organization>
+                    <Domain>AA</Domain>
+                </wsse:UsernameToken>
+            </wsse:Security>
+        </SOAP-ENV:Header>
+        <SOAP-ENV:Body>
+            <SessionCreateRQ returnContextID="true">
+                <POS>
+                    <Source PseudoCityCode="57HG"/>
+                </POS>
+            </SessionCreateRQ>
+        </SOAP-ENV:Body>
+    </SOAP-ENV:Envelope>
+2023/03/10 08:52:59 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SessionCreateRS</eb:Action><eb:MessageData><eb:MessageId>956000121790960210</eb:MessageId><eb:Timestamp>2023-03-10T03:22:59</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESD!ICESMSLB\/RES.LB!1678418579199!2921!269!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SessionCreateRS xmlns="http://www.opentravel.org/OTA/2002/11" version="1" status="Approved">	<ConversationId>2021-02-04-11184</ConversationId></SessionCreateRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:52:59 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESD!ICESMSLB\/RES.LB!1678418579199!2921!269!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>qc/VK87117</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:52:59 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>956040121796491660</eb:MessageId><eb:Timestamp>2023-03-10T03:22:59</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESD!ICESMSLB\/RES.LB!1678418579199!2921!269!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>             ON QUEUE AS OF 2122 ON 09MAR FOR VK87
+VK87 QUEUE 117  HAS       0 PNRS
+</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:54:01 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <SOAP-ENV:Envelope
+        xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:eb="http://www.ebxml.org/namespaces/messageHeader"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:xsd="http://www.w3.org/1999/XMLSchema">
+        <SOAP-ENV:Header>
+            <eb:MessageHeader SOAP-ENV:mustUnderstand="1" eb:version="2.0">
+                <eb:ConversationId>2021-02-04-11184</eb:ConversationId>
+                <eb:From>
+                    <eb:PartyId type="urn:x12.org:IO5:01">Turbo</eb:PartyId>
+                </eb:From>
+                <eb:To>
+                    <eb:PartyId type="urn:x12.org:IO5:01">webservices.sabre.com</eb:PartyId>
+                </eb:To>
+                <eb:CPAId>57HG</eb:CPAId>
+                <eb:Service eb:type="sabreXML">Session</eb:Service>
+                <eb:Action>SessionCreateRQ</eb:Action>
+                <eb:MessageData>
+                    <eb:MessageId>mid:1000</eb:MessageId>
+                    <eb:Timestamp>2022-12-04T18:27:23Z</eb:Timestamp>
+                    <eb:TimeToLive>2022-12-04T18:57:23Z</eb:TimeToLive>
+                </eb:MessageData>
+            </eb:MessageHeader>
+            <wsse:Security
+                xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"
+                xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/12/utility">
+                <wsse:UsernameToken>
+                    <wsse:Username>2222</wsse:Username>
+                    <wsse:Password>vgbhnj12</wsse:Password>
+                    <Organization>57HG</Organization>
+                    <Domain>AA</Domain>
+                </wsse:UsernameToken>
+            </wsse:Security>
+        </SOAP-ENV:Header>
+        <SOAP-ENV:Body>
+            <SessionCreateRQ returnContextID="true">
+                <POS>
+                    <Source PseudoCityCode="57HG"/>
+                </POS>
+            </SessionCreateRQ>
+        </SOAP-ENV:Body>
+    </SOAP-ENV:Envelope>
+2023/03/10 08:54:01 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SessionCreateRS</eb:Action><eb:MessageData><eb:MessageId>638031122411081670</eb:MessageId><eb:Timestamp>2023-03-10T03:24:01</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESD!ICESMSLB\/RES.LB!1678418641129!8368!277!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SessionCreateRS xmlns="http://www.opentravel.org/OTA/2002/11" version="1" status="Approved">	<ConversationId>2021-02-04-11184</ConversationId></SessionCreateRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:54:01 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESD!ICESMSLB\/RES.LB!1678418641129!8368!277!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>qc/1I0G117</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:54:01 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>960712122415961900</eb:MessageId><eb:Timestamp>2023-03-10T03:24:01</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESD!ICESMSLB\/RES.LB!1678418641129!8368!277!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>             ON QUEUE AS OF 1124 ON 10MAR FOR 1I0G
+1I0G QUEUE 117  HAS       0 PNRS
+</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:55:13 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <SOAP-ENV:Envelope
+        xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:eb="http://www.ebxml.org/namespaces/messageHeader"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:xsd="http://www.w3.org/1999/XMLSchema">
+        <SOAP-ENV:Header>
+            <eb:MessageHeader SOAP-ENV:mustUnderstand="1" eb:version="2.0">
+                <eb:ConversationId>2021-02-04-11184</eb:ConversationId>
+                <eb:From>
+                    <eb:PartyId type="urn:x12.org:IO5:01">Turbo</eb:PartyId>
+                </eb:From>
+                <eb:To>
+                    <eb:PartyId type="urn:x12.org:IO5:01">webservices.sabre.com</eb:PartyId>
+                </eb:To>
+                <eb:CPAId>57HG</eb:CPAId>
+                <eb:Service eb:type="sabreXML">Session</eb:Service>
+                <eb:Action>SessionCreateRQ</eb:Action>
+                <eb:MessageData>
+                    <eb:MessageId>mid:1000</eb:MessageId>
+                    <eb:Timestamp>2022-12-04T18:27:23Z</eb:Timestamp>
+                    <eb:TimeToLive>2022-12-04T18:57:23Z</eb:TimeToLive>
+                </eb:MessageData>
+            </eb:MessageHeader>
+            <wsse:Security
+                xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"
+                xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/12/utility">
+                <wsse:UsernameToken>
+                    <wsse:Username>2222</wsse:Username>
+                    <wsse:Password>vgbhnj12</wsse:Password>
+                    <Organization>57HG</Organization>
+                    <Domain>AA</Domain>
+                </wsse:UsernameToken>
+            </wsse:Security>
+        </SOAP-ENV:Header>
+        <SOAP-ENV:Body>
+            <SessionCreateRQ returnContextID="true">
+                <POS>
+                    <Source PseudoCityCode="57HG"/>
+                </POS>
+            </SessionCreateRQ>
+        </SOAP-ENV:Body>
+    </SOAP-ENV:Envelope>
+2023/03/10 08:55:13 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SessionCreateRS</eb:Action><eb:MessageData><eb:MessageId>966361123132881770</eb:MessageId><eb:Timestamp>2023-03-10T03:25:13</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESG!ICESMSLB\/RES.LB!1678418713309!661!293!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SessionCreateRS xmlns="http://www.opentravel.org/OTA/2002/11" version="1" status="Approved">	<ConversationId>2021-02-04-11184</ConversationId></SessionCreateRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:55:13 - [SWS.QIK.DEBUG.LOG]:REQUEST::, <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2003/07">
+    <soapenv:Header>
+        <sec:Security>
+            <sec:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESG!ICESMSLB\/RES.LB!1678418713309!661!293!1</sec:BinarySecurityToken>
+        </sec:Security>
+        <mes:MessageHeader mes:id="?" mes:version="?">
+            <mes:From>
+                <mes:PartyId type="urn:x12.org:IO5:01">Turbo</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId  type="urn:x12.org:IO5:01">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>57HG</mes:CPAId>
+            <mes:ConversationId>2021-02-04-11184</mes:ConversationId>
+            <mes:Service mes:type="sabreXML">Session</mes:Service>
+            <mes:Action>SabreCommandLLSRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:1000</mes:MessageId>
+                <mes:Timestamp>2022-12-04T18:27:23Z</mes:Timestamp>
+                <mes:TimeToLive>2022-12-04T18:57:23Z</mes:TimeToLive>
+            </mes:MessageData>
+        </mes:MessageHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns:SabreCommandLLSRQ >
+            <ns:Request Output="SCREEN" MDRSubset="?" CDATA="false">
+                <ns:HostCommand>qc/VK87117</ns:HostCommand>
+            </ns:Request>
+        </ns:SabreCommandLLSRQ>
+    </soapenv:Body>
+    </soapenv:Envelope>
+2023/03/10 08:55:13 - [SWS.QIK.DEBUG.LOG]:RESPONSE::, <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">webservices.sabre.com</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">Turbo</eb:PartyId></eb:To><eb:CPAId>57HG</eb:CPAId><eb:ConversationId>2021-02-04-11184</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SabreCommandLLSRS</eb:Action><eb:MessageData><eb:MessageId>643682123137361060</eb:MessageId><eb:Timestamp>2023-03-10T03:25:13</eb:Timestamp><eb:RefToMessageId>mid:1000</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESG!ICESMSLB\/RES.LB!1678418713309!661!293!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SabreCommandLLSRS xmlns="http://webservices.sabre.com/sabreXML/2003/07"><Response>             ON QUEUE AS OF 2125 ON 09MAR FOR VK87
+VK87 QUEUE 117  HAS       0 PNRS
+</Response></SabreCommandLLSRS></soap-env:Body></soap-env:Envelope>
+------------------------------------------------------------------------------------------------------------------------------------------

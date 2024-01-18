@@ -1,0 +1,30 @@
+2023/03/10 08:42:08 - [ATP.QIK.DEBUG.LOG]:REQUEST:: https://idmsservice.corp.apple.com/auth/apptoapp/token/generate
+2023/03/10 08:42:08 - [ATP.QIK.DEBUG.LOG]:REQUEST:: {'content-type': 'application/json'}
+2023/03/10 08:42:09 - [ATP.QIK.DEBUG.LOG]:RESPONSE:: {
+  "token" : "AutyLG/RuyqE8Xb7vOkVBZqGiCpS7sq4EZFxpAxMpB8=:n44biw4z2bfzx8g94sdp:1678446729538:1"
+}
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:10 - [ATP.QIK.DEBUG.LOG]:REQUEST:: https://appletravel.apple.com/api/v1/services/user/profile?
+2023/03/10 08:42:10 - [ATP.QIK.DEBUG.LOG]:REQUEST:: {'content-type': 'application/json', 'X-Apple-Client-App-ID': '170622', 'X-Apple-Transaction-Id': '1af7eaf9-00f6-47a9-ac55-2995ffbf8bfc', 'X-Apple-Sender-Id': 'gTAD', 'X-Apple-IDMS-A3-Token': 'AutyLG/RuyqE8Xb7vOkVBZqGiCpS7sq4EZFxpAxMpB8=:n44biw4z2bfzx8g94sdp:1678446729538:1'}
+2023/03/10 08:42:10 - [ATP.QIK.DEBUG.LOG]:REQUEST:: {
+    "badgeNumber": 5064440
+,
+    "gTADEprUserId": "2222-57HG"
+    }
+2023/03/10 08:42:10 - [ATP.QIK.DEBUG.LOG]:RESPONSE:: {"userId":2304655860,"firstName":"Vikas","lastName":"Akki","knownAsName":"Vikas","birthDate":"","travelDivisionId":"0056","travelCostCenterId":"0105","travelManagerEmail":"solson2@apple.com","travelDivisionRegion":"AMR","suspended":false,"taExemption":0,"prsTypeCode":3,"email":"vakki@apple.com","badgeNumber":"5064440","divisionId":"0056","costCenterId":"0105","divsionRegion":"AMR","managerEmail":"solson2@apple.com","secondLevelManagerEmail":"dcooper2@apple.com","divisionControllerEmail":"mscharff@apple.com","myArrangers":[],"myEditors":[],"usersIAmArrangerFor":[],"usersIAmEditorFor":[],"addresses":[],"paymentCards":[],"passports":[],"visas":[],"loyaltyPrograms":[],"travelPreferences":{}}
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:17 - [ATP.QIK.DEBUG.LOG]:REQUEST:: https://idmsservice.corp.apple.com/auth/apptoapp/token/generate
+2023/03/10 08:42:17 - [ATP.QIK.DEBUG.LOG]:REQUEST:: {'content-type': 'application/json'}
+2023/03/10 08:42:18 - [ATP.QIK.DEBUG.LOG]:RESPONSE:: {
+  "token" : "v970fJACWAFEnYmw4L8x779hQqmVqQ4BzqHA21fDGnk=:yxtq7gtkuwnquac93vjm:1678446738736:1"
+}
+------------------------------------------------------------------------------------------------------------------------------------------
+2023/03/10 08:42:20 - [ATP.QIK.DEBUG.LOG]:REQUEST:: https://appletravel.apple.com/api/v1/services/user/profile?
+2023/03/10 08:42:20 - [ATP.QIK.DEBUG.LOG]:REQUEST:: {'content-type': 'application/json', 'X-Apple-Client-App-ID': '170622', 'X-Apple-Transaction-Id': '1af7eaf9-00f6-47a9-ac55-2995ffbf8bfc', 'X-Apple-Sender-Id': 'gTAD', 'X-Apple-IDMS-A3-Token': 'v970fJACWAFEnYmw4L8x779hQqmVqQ4BzqHA21fDGnk=:yxtq7gtkuwnquac93vjm:1678446738736:1'}
+2023/03/10 08:42:20 - [ATP.QIK.DEBUG.LOG]:REQUEST:: {
+    "badgeNumber": 5064440
+,
+    "gTADEprUserId": "2222-57HG"
+    }
+2023/03/10 08:42:20 - [ATP.QIK.DEBUG.LOG]:RESPONSE:: {"userId":2304655860,"firstName":"Vikas","lastName":"Akki","knownAsName":"Vikas","birthDate":"","travelDivisionId":"0056","travelCostCenterId":"0105","travelManagerEmail":"solson2@apple.com","travelDivisionRegion":"AMR","suspended":false,"taExemption":0,"prsTypeCode":3,"email":"vakki@apple.com","badgeNumber":"5064440","divisionId":"0056","costCenterId":"0105","divsionRegion":"AMR","managerEmail":"solson2@apple.com","secondLevelManagerEmail":"dcooper2@apple.com","divisionControllerEmail":"mscharff@apple.com","myArrangers":[],"myEditors":[],"usersIAmArrangerFor":[],"usersIAmEditorFor":[],"addresses":[],"paymentCards":[],"passports":[],"visas":[],"loyaltyPrograms":[],"travelPreferences":{}}
+------------------------------------------------------------------------------------------------------------------------------------------
